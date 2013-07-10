@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Holo.meishichina.Theme" parent="Holo.Theme.Light">
+        <item name="android:homeAsUpIndicator">@drawable/base_action_bar_back</item>
+        <item name="homeAsUpIndicator">@drawable/base_action_bar_back</item>
+        <item name="android:windowAnimationStyle">@style/base_activity_animation</item>
+        <item name="actionBarStyle">@style/base_actionbar</item>
+        <item name="android:actionBarStyle">@style/base_actionbar</item>
+        <item name="actionBarSplitStyle">@style/base_actionbar</item>
+        <item name="android:actionBarSplitStyle">@style/base_actionbar</item>
+        <item name="actionMenuTextColor">#fff6eced</item>
+        <item name="android:actionMenuTextColor">#fff6eced</item>
+        <item name="titlepagerbackground">#aaffffff</item>
+        <item name="titlepagertextColor">#AA000000</item>
+        <item name="titlepagerfooterColor">#FFAA2222</item>
+        <item name="titlepagerselectedColor">#FF000000</item>
+        <item name="menusearch">@drawable/biz_plugin_searchnews_search_btn</item>
+        <item name="textcontent">@color/comment_content</item>
+        <item name="recipedetailcaipin">@color/detail_caipin_background_color</item>
+        <item name="recipedetailingredients">@drawable/r_detail_zhuliao_bar</item>
+        <item name="reciperowtab">@drawable/pickuptab_underline</item>
+        <item name="reciperowtabradiobutton">#fff5f5f5</item>
+        <item name="contentdiscard">@drawable/content_discard_light</item>
+        <item name="socialshare">@drawable/social_share_light</item>
+    </style>
+
+    <style name="Holo.meishichina.Theme.dark" parent="Holo.Theme">
+        <item name="android:homeAsUpIndicator">@drawable/base_action_bar_back</item>
+        <item name="homeAsUpIndicator">@drawable/base_action_bar_back</item>
+        <item name="android:windowAnimationStyle">@style/base_activity_animation</item>
+        <item name="titlepagerbackground">#aa000000</item>
+        <item name="titlepagertextColor">#AAffffff</item>
+        <item name="titlepagerfooterColor">#63B8FF</item>
+        <item name="titlepagerselectedColor">#FFFFFFFF</item>
+        <item name="menusearch">@drawable/ic_menu_search</item>
+        <item name="textcontent">@color/text_color_gray_black</item>
+        <item name="recipedetailcaipin">@color/transparent</item>
+        <item name="recipedetailingredients">@color/transparent</item>
+        <item name="reciperowtab">@color/transparent</item>
+        <item name="reciperowtabradiobutton">@color/transparent</item>
+        <item name="contentdiscard">@drawable/content_discard_dark</item>
+        <item name="socialshare">@drawable/social_share_dark</item>
+    </style>
+
+</resources>

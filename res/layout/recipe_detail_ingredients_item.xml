@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <View
+        android:id="@+id/center_vertical_line"
+        android:layout_width="1.0px"
+        android:layout_height="30.0dip"
+        android:layout_centerInParent="true"
+        android:background="#ffcccccc" />
+
+    <TableLayout
+        android:id="@+id/table1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/center_vertical_line"
+        android:paddingBottom="6.0dip"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="6.0dip"
+        android:paddingTop="6.0dip"
+        android:stretchColumns="0,1" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@color/text_color_gray_black"
+                android:textSize="@dimen/text_size_2" />
+
+            <TextView
+                android:id="@+id/text12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size_2" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffcccccc" />
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/table2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/center_vertical_line"
+        android:paddingBottom="6.0dip"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="6.0dip"
+        android:paddingTop="6.0dip"
+        android:stretchColumns="0,1" >
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@color/text_color_gray_black"
+                android:textSize="@dimen/text_size_2" />
+
+            <TextView
+                android:id="@+id/text22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size_2" />
+        </TableRow>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffcccccc" />
+    </TableLayout>
+
+</RelativeLayout>

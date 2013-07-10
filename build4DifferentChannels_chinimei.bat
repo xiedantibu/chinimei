@@ -1,0 +1,1 @@
+powershell E:\workspace2\chinimei\build4DifferentChannels.ps1 chinimei "E:\workspace2\chinimei" "E:\workspace2\chinimei\android.keystore" 123456789 123456789 android.keystore

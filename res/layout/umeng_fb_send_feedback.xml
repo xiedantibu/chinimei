@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/umeng_fb_rootId"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EFEFEF"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/ActionBar" >
+
+        <TextView
+            android:id="@+id/umeng_fb_goback_btn"
+            style="@style/ActionBarArrow"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/base_action_bar_back"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/umeng_fb_conversation_title"
+            style="@style/ActionBarTitle"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/umeng_fb_goback_btn"
+            android:text="@string/UMFeedbackConversationTitle" />
+
+        <ImageButton
+            android:id="@+id/umeng_fb_see_list_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/biz_pics_action_bar_action_more_normal" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/umeng_fb_content"
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/base_search_edittext_selector"
+        android:gravity="top"
+        android:hint="@string/UMFeedbackContent"
+        android:maxLength="500"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarThumbVertical="@drawable/base_list_scrollbar_handle"
+        android:scrollbars="vertical"
+        android:shadowColor="@null"
+        android:singleLine="false"
+        android:text=""
+        android:textColor="#ff2f2f2f"
+        android:textColorHint="#ffa4a6b0"
+        android:textSize="16.0sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="10.0dip" >
+
+        <EditText
+            android:id="@+id/feedback_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/base_search_edittext_selector"
+            android:hint="@string/feedback_email_hint"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="90.0dip"
+            android:saveEnabled="true"
+            android:textColor="#ff2f2f2f"
+            android:textColorHint="#ffa4a6b0"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/feedback_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/feedback_email"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:gravity="center_vertical"
+            android:text="@string/feedback_email_title"
+            android:textColor="#ff000000"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/umeng_fb_submit"
+            style="@style/login_title_style"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/biz_pc_account_login_btn_selector"
+            android:gravity="center"
+            android:text="@string/UMFeedbackSummit"
+            android:textColor="#ffffffff" />
+    </RelativeLayout>
+
+</LinearLayout>

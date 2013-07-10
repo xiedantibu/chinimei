@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/personal_info_avater"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="8.0dip"
+                android:background="@color/background_light"
+                android:padding="2.0dip" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/personal_info_username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical|left" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/personal_regist_time_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_marginTop="5.0dip"
+                android:text="@string/fragment_personal_info_regist_time" />
+
+            <TextView
+                android:id="@+id/personal_regist_time_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:linksClickable="true"
+                android:paddingBottom="5.0dip"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="20.0dip"
+                android:paddingTop="5.0dip"
+                android:textIsSelectable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/personal_details_Layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_marginTop="5.0dip"
+                android:text="@string/fragment_personal_info_sum" />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TableRow
+                    android:id="@+id/personal_info_fav_recipe_num_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/abs__btn_cab_done_holo_light"
+                    android:paddingBottom="5.0dip"
+                    android:paddingLeft="20.0dip"
+                    android:paddingRight="20.0dip"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.7"
+                        android:text="@string/fragment_personal_info_fav_recipe_num" />
+
+                    <TextView
+                        android:id="@+id/personal_info_fav_recipe_num_number"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="right|center"
+                        android:drawablePadding="1dp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/personal_info_report_num_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/abs__btn_cab_done_holo_light"
+                    android:paddingBottom="5.0dip"
+                    android:paddingLeft="20.0dip"
+                    android:paddingRight="20.0dip"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.7"
+                        android:text="@string/fragment_personal_report_num" />
+
+                    <TextView
+                        android:id="@+id/personal_report_num_number"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="right|center"
+                        android:drawablePadding="1dp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/personal_info_original_num_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/abs__btn_cab_done_holo_light"
+                    android:paddingBottom="5.0dip"
+                    android:paddingLeft="20.0dip"
+                    android:paddingRight="20.0dip"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.7"
+                        android:text="@string/fragment_personal_original" />
+
+                    <TextView
+                        android:id="@+id/personal_info_original_number"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="right|center"
+                        android:drawablePadding="1dp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

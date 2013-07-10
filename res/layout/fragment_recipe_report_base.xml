@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.xlm.meishichina.widget.pulltorefresh.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fragment_recipe_report_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/list_divider_holo_light"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:scrollbars="none"
+        ptr:ptrMode="disabled" />
+
+    <Button
+        android:id="@+id/fragment_recipe_report_button_myreport"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/biz_pc_account_register_btn_selector"
+        android:text="@string/fragment_recipe_report_myselfreport"
+        android:textAppearance="@style/comment_list_title_style"
+        android:textColor="#ff2f2f2f"
+        android:visibility="gone" />
+
+</RelativeLayout>

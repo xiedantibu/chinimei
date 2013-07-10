@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff0f0f0" >
+
+    <RelativeLayout
+        android:id="@+id/topbar_layout"
+        style="@style/ActionBar" >
+
+        <TextView
+            android:id="@+id/umeng_fb_conversation_title"
+            style="@style/ActionBarTitle"
+            android:layout_centerInParent="true"
+            android:text="@string/UMFeedbackConversationTitle" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/umeng_fb_bottom_sub"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/biz_tie_comment_reply_bg"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/umeng_fb_editTxtFb"
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/base_search_edittext_selector"
+                android:drawableLeft="@drawable/biz_tie_comment_reply_write"
+                android:drawablePadding="10.0dip"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/fragment_recipe_comment_fb_say"
+                android:maxHeight="100.0dip"
+                android:maxLength="1000"
+                android:paddingLeft="10.0dip"
+                android:textColor="@color/comment_reply"
+                android:textSize="14.0sp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/umeng_fb_btnSendFb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/base_send" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.umeng.fb.ui.ThreadView
+        android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/umeng_fb_bottom_sub"
+        android:layout_below="@id/topbar_layout"
+        android:layout_weight="1.0"
+        android:cacheColorHint="@android:color/transparent"
+        android:clickable="false"
+        android:divider="#fff0f0f0" />
+
+</RelativeLayout>

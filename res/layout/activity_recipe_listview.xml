@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xlm.meishichina.widget.pulltorefresh.PullToRefreshListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_recipe_list"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentTop="true"
+    android:cacheColorHint="#00000000"
+    android:divider="@drawable/list_divider_holo_light"
+    android:fadeScrollbars="true"
+    android:fadingEdge="none"
+    android:fastScrollEnabled="true"
+    android:scrollbars="none"
+    ptr:ptrAnimationStyle="rotate"
+    ptr:ptrMode="both" />

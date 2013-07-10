@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/activated_background_light"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/recipe_listview_item_cover"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="8.0dip"
+        android:background="@color/background_light"
+        android:padding="2.0dip"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@id/recipe_listview_item_cover"
+        android:layout_alignTop="@id/recipe_listview_item_cover"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/recipe_listview_item_cover"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp" >
+
+            <TextView
+                android:id="@+id/recipe_listview_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textAppearance="@style/comment_username_style" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/recipe_listview_item_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingLeft="5dp"
+            android:textAppearance="@style/recipe_list_content_style" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/recipe_listview_item_read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:ellipsize="end"
+                android:text="@string/fragment_personal_read_num"
+                android:textAppearance="@style/comment_date_style" />
+
+            <TextView
+                android:id="@+id/recipe_listview_item_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/recipe_listview_item_read"
+                android:layout_alignTop="@id/recipe_listview_item_read"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/recipe_listview_item_read"
+                android:gravity="left|center"
+                android:text="@string/fragment_personal_comment_num"
+                android:textAppearance="@style/comment_date_style" />
+
+            <TextView
+                android:id="@+id/recipe_listview_item_fav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/recipe_listview_item_read"
+                android:layout_alignTop="@id/recipe_listview_item_read"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/recipe_listview_item_comment"
+                android:gravity="left|center"
+                android:visibility="gone"
+                android:text="@string/fragment_personal_fav_num"
+                android:textAppearance="@style/comment_date_style" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

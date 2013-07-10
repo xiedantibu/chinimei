@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.xlm.meishichina"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.xlm.meishichina.widget.viewpagerindicator.TitlePageIndicator
+        android:id="@+id/report_detail_indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?titlepagerbackground"
+        android:paddingBottom="10dp"
+        android:textColor="?titlepagertextColor"
+        app:footerColor="?titlepagerfooterColor"
+        app:footerIndicatorHeight="3dp"
+        app:footerIndicatorStyle="underline"
+        app:footerLineHeight="1dp"
+        app:selectedBold="true"
+        app:selectedColor="?titlepagerselectedColor" >
+    </com.xlm.meishichina.widget.viewpagerindicator.TitlePageIndicator>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/report_detail_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1" />
+
+</LinearLayout>

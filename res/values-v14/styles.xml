@@ -1,0 +1,11 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="base_actionbar" parent="Widget.Sherlock.ActionBar.Solid">
+        <item name="android:titleTextStyle">@style/ActionBarTitle</item>
+        <item name="android:background">@drawable/base_actionbar_bg</item>
+        <item name="android:backgroundStacked">@drawable/abs__ab_stacked_solid_dark_holo</item>
+        <item name="android:backgroundSplit">@drawable/base_actionbar_bg</item>
+        <item name="android:displayOptions">showTitle</item>
+    </style>
+
+</resources>

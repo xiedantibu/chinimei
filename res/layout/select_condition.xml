@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip" >
+
+            <TextView
+                android:id="@+id/select_condition_diff_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/select_condition_difficulty"
+                android:textColor="#ffff6600"
+                android:textSize="@dimen/text_size_2" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1.0px"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/select_condition_diff_text"
+                android:background="#ffcccccc" />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/select_condition_difficulty_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <RadioGroup
+                android:id="@+id/select_condition_difficulty_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/select_condition_difficulty01"
+                    style="@style/select_condition_item"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_marginRight="10dp"
+                    android:checked="true"
+                    android:text="@string/select_condition_difficulty_01" />
+
+                <RadioButton
+                    android:id="@+id/select_condition_difficulty02"
+                    style="@style/select_condition_item"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/select_condition_difficulty_02" />
+
+                <RadioButton
+                    android:id="@+id/select_condition_difficulty03"
+                    style="@style/select_condition_item"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/select_condition_difficulty_03" />
+
+                <RadioButton
+                    android:id="@+id/select_condition_difficulty04"
+                    style="@style/select_condition_item"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:text="@string/select_condition_difficulty_04" />
+            </RadioGroup>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip" >
+
+            <TextView
+                android:id="@+id/select_condition_flavor_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/select_condition_flavor"
+                android:textColor="#ffff6600"
+                android:textSize="@dimen/text_size_2" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1.0px"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/select_condition_flavor_text"
+                android:background="#ffcccccc" />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/select_condition_flavor_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <RadioGroup
+                android:id="@+id/select_condition_flavor_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/select_condition_flavor_01"
+                    style="@style/select_condition_item"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_marginRight="10dp"
+                    android:checked="true"
+                    android:text="@string/select_condition_flavor_01" />
+
+                <RadioButton
+                    android:id="@+id/select_condition_flavor_02"
+                    style="@style/select_condition_item"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/select_condition_flavor_02" />
+
+                <RadioButton
+                    android:id="@+id/select_condition_flavor_03"
+                    style="@style/select_condition_item"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/select_condition_flavor_03" />
+
+                <RadioButton
+                    android:id="@+id/select_condition_flavor_04"
+                    style="@style/select_condition_item"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:text="@string/select_condition_flavor_04" />
+            </RadioGroup>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip" >
+
+            <TextView
+                android:id="@+id/select_condition_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/select_condition_time"
+                android:textColor="#ffff6600"
+                android:textSize="@dimen/text_size_2" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1.0px"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/select_condition_time_text"
+                android:background="#ffcccccc" />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/select_condition_time_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <RadioGroup
+                android:id="@+id/select_condition_time_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/select_condition_time_01"
+                    style="@style/select_condition_item"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_marginRight="10dp"
+                    android:checked="true"
+                    android:text="@string/select_condition_time_01" />
+
+                <RadioButton
+                    android:id="@+id/select_condition_time_02"
+                    style="@style/select_condition_item"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/select_condition_time_02" />
+
+                <RadioButton
+                    android:id="@+id/select_condition_time_03"
+                    style="@style/select_condition_item"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/select_condition_time_03" />
+
+                <RadioButton
+                    android:id="@+id/select_condition_time_04"
+                    style="@style/select_condition_item"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:text="@string/select_condition_time_04" />
+            </RadioGroup>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip" >
+
+            <TextView
+                android:id="@+id/select_condition_cons_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/select_condition_constellation"
+                android:textColor="#ffff6600"
+                android:textSize="@dimen/text_size_2" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1.0px"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/select_condition_cons_text"
+                android:background="#ffcccccc" />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/select_condition_constellation_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <RadioGroup
+                android:id="@+id/select_condition_constellation_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/select_condition_constellation_01"
+                    style="@style/select_condition_item"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_marginRight="10dp"
+                    android:checked="true"
+                    android:text="@string/select_condition_constellation_01" />
+
+                <RadioButton
+                    android:id="@+id/select_condition_constellation_02"
+                    style="@style/select_condition_item"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/select_condition_constellation_02" />
+
+                <RadioButton
+                    android:id="@+id/select_condition_constellation_03"
+                    style="@style/select_condition_item"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/select_condition_constellation_03" />
+
+                <RadioButton
+                    android:id="@+id/select_condition_constellation_04"
+                    style="@style/select_condition_item"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:text="@string/select_condition_constellation_04" />
+            </RadioGroup>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</ScrollView>

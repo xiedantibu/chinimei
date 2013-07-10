@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_recipe_row_tab"
+    android:layout_width="fill_parent"
+    android:layout_height="36.0dp"
+    android:background="?reciperowtab"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <RadioButton
+        android:id="@+id/fragment_recipe_row_time"
+        style="@style/TextView.SubTitle"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="?reciperowtabradiobutton"
+        android:button="@null"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/fragment_recipe_row_text_time"
+        android:textColor="@color/tab_text_color"
+        android:textSize="16.0dip" />
+
+    <View
+        android:layout_width="1.0px"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffcccccc" />
+
+    <RadioButton
+        android:id="@+id/fragment_recipe_row_fav"
+        style="@style/TextView.SubTitle"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="?reciperowtabradiobutton"
+        android:button="@null"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/fragment_recipe_row_text_fav"
+        android:textColor="@color/tab_text_color"
+        android:textSize="16.0dip" />
+
+    <View
+        android:layout_width="1.0px"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffcccccc" />
+
+    <RadioButton
+        android:id="@+id/fragment_recipe_row_comment"
+        style="@style/TextView.SubTitle"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="?reciperowtabradiobutton"
+        android:button="@null"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/fragment_recipe_row_text_comment"
+        android:textColor="@color/tab_text_color"
+        android:textSize="16.0dip" />
+
+    <View
+        android:layout_width="1.0px"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffcccccc" />
+
+    <RadioButton
+        android:id="@+id/fragment_recipe_row_read"
+        style="@style/TextView.SubTitle"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="?reciperowtabradiobutton"
+        android:button="@null"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/fragment_recipe_row_text_read"
+        android:textColor="@color/tab_text_color"
+        android:textSize="16.0dip" />
+
+</RadioGroup>

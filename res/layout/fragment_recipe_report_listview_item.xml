@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp" >
+
+    <ImageView
+        android:id="@+id/report_listview_item_avater"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="8.0dip"
+        android:background="@drawable/biz_tie_user_avater_default"
+        android:padding="2.0dip" />
+
+    <TextView
+        android:id="@+id/report_listview_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/report_listview_item_avater"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/report_listview_item_avater"
+        android:gravity="left|center"
+        android:textAppearance="@style/comment_date_style" />
+
+    <TextView
+        android:id="@+id/report_listview_item_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/report_listview_item_avater"
+        android:layout_alignTop="@id/report_listview_item_avater"
+        android:layout_toLeftOf="@id/report_listview_item_date"
+        android:layout_toRightOf="@id/report_listview_item_avater"
+        android:gravity="left|center"
+        android:singleLine="true"
+        android:textAppearance="@style/comment_username_style" />
+
+    <ImageView
+        android:id="@+id/report_listview_item_imageview"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/report_listview_item_avater"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9.0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/recipe_detail" />
+
+    <TextView
+        android:id="@+id/report_listview_item_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/report_listview_item_imageview"
+        android:layout_marginTop="9.0dip"
+        android:textAppearance="@style/comment_content_style" />
+
+</RelativeLayout>

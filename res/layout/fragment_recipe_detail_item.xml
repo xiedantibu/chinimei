@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/fragment_recipe_detail_item_imageview"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/home_recipe_image_height"
+        android:scaleType="fitXY"
+        android:src="@drawable/yaoyiyao_pic_background" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:padding="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/frament_recipe_detail_item_userCover_layout"
+            android:layout_width="44.0dip"
+            android:layout_height="44.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/background_light" >
+
+            <ImageView
+                android:id="@+id/frament_recipe_detail_item_userCover"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/frament_recipe_detail_item_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/frament_recipe_detail_item_userCover_layout"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/text_size_2" />
+
+        <TextView
+            android:id="@+id/frament_recipe_detail_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/frament_recipe_detail_item_userName"
+            android:textColor="@color/text_normal_orange"
+            android:textSize="@dimen/text_size_1" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1.0px"
+        android:background="#ffcccccc"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip" />
+
+    <TextView
+        android:id="@+id/frament_recipe_detail_item_synopsis"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:textColor="#ff555555"
+        android:textSize="@dimen/text_size_2" />
+
+    <LinearLayout
+        android:id="@+id/frament_recipe_detail_item_caipin_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="15.0dip" >
+
+        <View
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent"
+            android:background="#ffcccccc" />
+
+        <LinearLayout
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1.0px"
+                android:background="#ffcccccc" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="34.0dip"
+                android:background="?recipedetailcaipin"
+                android:gravity="center"
+                android:text="@string/fragment_recipe_detail_kouwei"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size_2" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1.0px"
+                android:background="#ffcccccc" />
+
+            <TextView
+                android:id="@+id/fragment_recipe_detail_kouwei_id"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:gravity="center"
+                android:textColor="@color/text_color_gray_black"
+                android:textSize="@dimen/text_size_2" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1.0px"
+                android:background="#ffcccccc" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent"
+            android:background="#ffcccccc" />
+
+        <LinearLayout
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1.0px"
+                android:background="#ffcccccc" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="34.0dip"
+                android:background="?recipedetailcaipin"
+                android:gravity="center"
+                android:text="@string/fragment_recipe_detail_gongyi"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size_2" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1.0px"
+                android:background="#ffcccccc" />
+
+            <TextView
+                android:id="@+id/fragment_recipe_detail_gongyi_id"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:gravity="center"
+                android:textColor="@color/text_color_gray_black"
+                android:textSize="@dimen/text_size_2" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1.0px"
+                android:background="#ffcccccc" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent"
+            android:background="#ffcccccc" />
+
+        <LinearLayout
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1.0px"
+                android:background="#ffcccccc" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="34.0dip"
+                android:background="?recipedetailcaipin"
+                android:gravity="center"
+                android:text="@string/fragment_recipe_detail_time"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size_2" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1.0px"
+                android:background="#ffcccccc" />
+
+            <TextView
+                android:id="@+id/fragment_recipe_detail_time_id"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:gravity="center"
+                android:textColor="@color/text_color_gray_black"
+                android:textSize="@dimen/text_size_2" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1.0px"
+                android:background="#ffcccccc" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent"
+            android:background="#ffcccccc" />
+
+        <LinearLayout
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1.0px"
+                android:background="#ffcccccc" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="34.0dip"
+                android:background="?recipedetailcaipin"
+                android:gravity="center"
+                android:text="@string/fragment_recipe_detail_difficulty"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size_2" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1.0px"
+                android:background="#ffcccccc" />
+
+            <TextView
+                android:id="@+id/fragment_recipe_detail_difficulty_id"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:gravity="center"
+                android:textColor="@color/text_color_gray_black"
+                android:textSize="@dimen/text_size_2" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1.0px"
+                android:background="#ffcccccc" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent"
+            android:background="#ffcccccc" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_recipe_detail_ingredients"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/fragment_recipe_detail_main_ingredients_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:textColor="@color/text_color_gray_black"
+            android:textSize="@dimen/text_size_2"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/fragment_recipe_detail_steps_text"
+            android:textColor="@color/text_normal_orange"
+            android:textSize="@dimen/text_size_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/fragment_recipe_detail_try"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/text_size_3" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_recipe_detail_steps"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip" />
+
+    <TextView
+        android:id="@+id/fragment_recipe_detail_tips_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:text="@string/fragment_recipe_detail_tips_text"
+        android:textColor="@color/text_normal_orange"
+        android:textSize="@dimen/text_size_1" />
+
+    <TextView
+        android:id="@+id/fragment_recipe_detail_tips"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:textColor="@color/text_color_gray"
+        android:textSize="@dimen/text_size_2" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1.0px"
+        android:layout_marginTop="5.0dip"
+        android:background="#ffcccccc"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip" />
+
+</LinearLayout>

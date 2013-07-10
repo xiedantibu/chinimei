@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E0E0E0"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/ActionBar" >
+
+        <TextView
+            android:id="@+id/umeng_fb_conversation_title"
+            style="@style/ActionBarTitle"
+            android:layout_centerInParent="true"
+            android:text="@string/UMFeedbackListTitle" />
+
+        <ImageButton
+            android:id="@+id/umeng_fb_imgBtn_submitFb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/biz_fb_write_normal" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:drawSelectorOnTop="false" />
+
+</LinearLayout>

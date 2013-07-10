@@ -1,0 +1,158 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="base_activity_animation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/base_slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/base_stay_orig</item>
+        <item name="android:activityCloseEnterAnimation">@anim/base_stay_orig</item>
+        <item name="android:activityCloseExitAnimation">@anim/base_slide_right_out</item>
+        <item name="android:taskOpenEnterAnimation">@anim/base_slide_right_in</item>
+        <item name="android:taskOpenExitAnimation">@anim/base_stay_orig</item>
+        <item name="android:taskCloseEnterAnimation">@anim/base_stay_orig</item>
+        <item name="android:taskCloseExitAnimation">@anim/base_slide_right_out</item>
+        <item name="android:taskToFrontEnterAnimation">@anim/base_slide_right_in</item>
+        <item name="android:taskToFrontExitAnimation">@anim/base_stay_orig</item>
+        <item name="android:taskToBackEnterAnimation">@anim/base_stay_orig</item>
+        <item name="android:taskToBackExitAnimation">@anim/base_slide_right_out</item>
+    </style>
+
+    <style name="base_actionbar" parent="Widget.Sherlock.ActionBar.Solid">
+        <item name="titleTextStyle">@style/ActionBarTitle</item>
+        <item name="background">@drawable/base_actionbar_bg</item>
+        <item name="backgroundStacked">@drawable/abs__ab_stacked_solid_dark_holo</item>
+        <item name="backgroundSplit">@drawable/base_actionbar_bg</item>
+        <item name="displayOptions">showTitle</item>
+    </style>
+
+    <style name="ActionBar">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/base_actionbar_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <style name="ActionBarArrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:src">@drawable/base_action_bar_back</item>
+    </style>
+
+    <style name="login_title_style">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ff93959c</item>
+    </style>
+
+    <style name="login_button_style">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="ActionBarTitle">
+        <item name="android:textColor">#fff6eced</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:paddingLeft">14.0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">1.0dip</item>
+    </style>
+
+    <style name="base_large_progressbar_style">
+        <item name="android:maxWidth">38.0dip</item>
+        <item name="android:maxHeight">38.0dip</item>
+        <item name="android:indeterminateDrawable">@anim/base_loading_large_anim</item>
+        <item name="android:minWidth">38.0dip</item>
+        <item name="android:minHeight">38.0dip</item>
+    </style>
+
+    <style name="base_small_progressbar_style">
+        <item name="android:maxWidth">18.0dip</item>
+        <item name="android:maxHeight">18.0dip</item>
+        <item name="android:indeterminateDrawable">@anim/base_loading_small_anim</item>
+        <item name="android:minWidth">18.0dip</item>
+        <item name="android:minHeight">18.0dip</item>
+    </style>
+
+    <style name="comment_username_style">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/comment_username</item>
+    </style>
+
+    <style name="comment_content_style">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?textcontent</item>
+        <item name="android:lineSpacingExtra">3.0dip</item>
+    </style>
+
+    <style name="recipe_list_content_style">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?textcontent</item>
+        <item name="android:lineSpacingExtra">2.0dip</item>
+    </style>
+
+    <style name="comment_date_style">
+        <item name="android:textSize">11.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ff808080</item>
+    </style>
+
+    <style name="comment_list_title_style">
+        <item name="android:textSize">16sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">#ff2f2f2f</item>
+    </style>
+
+    <style name="upload_report_button_style">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="whitewithshadow">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:shadowColor">#ff222222</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+    </style>
+
+    <style name="mytextstyle">
+        <item name="android:textAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.SubTitle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="select_condition_item">
+        <item name="android:textSize">@dimen/text_size_2</item>
+        <item name="android:textColor">@color/checked_btn</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_condition</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+</resources>

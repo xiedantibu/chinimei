@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:holo="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory holo:title="@string/fragment_setting_normal" >
+        <Preference
+            holo:id="@+id/login"
+            holo:title="@string/fragment_setting_loging" />
+
+        <ListPreference
+            holo:id="@+id/theme"
+            holo:defaultValue="1"
+            holo:dialogTitle="@string/fragment_setting_choose_theme"
+            holo:entries="@array/theme_list"
+            holo:entryValues="@array/theme_list_value"
+            holo:title="@string/fragment_setting_theme" />
+    </PreferenceCategory>
+    <PreferenceCategory holo:title="@string/fragment_setting_supper" >
+        <Preference
+            holo:id="@+id/checkupgrade"
+            holo:title="@string/fragment_setting_checkupgrade" />
+
+        <PreferenceScreen holo:title="@string/fragment_setting_flowcontrol" >
+            <SwitchPreference
+                holo:id="@+id/download_pictures"
+                holo:defaultValue="false"
+                holo:summaryOff="@string/fragment_setting_has_pictures"
+                holo:summaryOn="@string/fragment_setting_no_pictures"
+                holo:title="@string/fragment_setting_no_download_pictures" />
+
+            <ListPreference
+                holo:id="@+id/uploadpicquality"
+                holo:defaultValue="4"
+                holo:dialogTitle="@string/fragment_setting_upload_pic_quality"
+                holo:entries="@array/upload_pic_quality_list"
+                holo:entryValues="@array/upload_pic_quality_list_value"
+                holo:title="@string/fragment_setting_upload_pic_quality" />
+        </PreferenceScreen>
+
+        <Preference
+            holo:id="@+id/deletelocalcache"
+            holo:title="@string/fragment_setting_delete_localcache" />
+
+        <SwitchPreference
+            holo:id="@+id/checkupgrade_switch"
+            holo:defaultValue="false"
+            holo:title="@string/fragment_setting_is_wife_update" />
+    </PreferenceCategory>
+    <PreferenceCategory holo:title="@string/fragment_setting_other" >
+        <Preference
+            holo:id="@+id/recommend_app"
+            holo:title="@string/fragment_setting_recommend_app" />
+        <Preference
+            holo:id="@+id/update_message"
+            holo:title="@string/fragment_setting_update_message" />
+        <Preference
+            holo:id="@+id/feedback"
+            holo:title="@string/fragment_setting_feedback" />
+        <Preference
+            holo:id="@+id/author"
+            holo:summary="@string/fragment_setting_author"
+            holo:title="@string/fragment_setting_kaifazhe" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

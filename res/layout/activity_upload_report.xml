@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/upload_report_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/upload_report_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip" >
+
+        <EditText
+            android:id="@+id/upload_report_message"
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/base_search_edittext_selector"
+            android:gravity="top"
+            android:hint="@string/activity_upload_report_edit_hint"
+            android:maxLength="140"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbarThumbVertical="@drawable/base_list_scrollbar_handle"
+            android:scrollbars="vertical"
+            android:shadowColor="@null"
+            android:singleLine="false"
+            android:text=""
+            android:textColorHint="#ffa4a6b0"
+            android:textSize="16.0sp" />
+
+        <ImageView
+            android:id="@+id/upload_report_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignBottom="@id/upload_report_message"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/yaoyiyao_pic_background" />
+
+        <TextView
+            android:id="@+id/upload_report_text_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginRight="5.0dip"
+            android:gravity="left|center"
+            android:textAppearance="@style/comment_date_style" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/upload_report_button"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/biz_pc_account_login_btn_selector"
+        android:text="@string/activity_upload_report_button_upload"
+        android:textAppearance="@style/upload_report_button_style"
+        android:textColor="#ffffffff" />
+
+</LinearLayout>

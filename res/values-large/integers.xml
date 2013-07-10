@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="yaoyiyao_history_gridview_numColumns">3</integer>
+    <integer name="recipe_collects_gridview_numColumns">4</integer>
+
+</resources>

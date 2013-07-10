@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/yaoyiyao_history_gridview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:horizontalSpacing="10.0dip"
+    android:numColumns="@integer/yaoyiyao_history_gridview_numColumns"
+    android:padding="10.0dip"
+    android:scrollbars="none"
+    android:verticalSpacing="10.0dip" />

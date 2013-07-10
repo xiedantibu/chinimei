@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelog>
+    <release
+        version="1.0"
+        versioncode="1">
+        <change>"推荐菜谱"可以随机获取最热门的菜谱</change>
+        <change>"我"可以查看个人资料，收藏菜谱，照片报告，原创菜谱</change>
+        <change>"美食专题"获取一系列美食专题菜谱列表</change>
+        <change>"菜谱排行"可以分别按照时间，收藏，评论，阅读查看菜谱列表</change>
+        <change>"美食分类"可以根据关键字搜索菜谱，同时也可以根据分类查看菜谱</change>
+        <change>"设置"包含三大类：常规，高级，其他。常规主要是主题以及帐号设置，高级包含检查更新.流量控制.缓存清除，其他主要包含意见反馈以及美食的更新日志</change>
+        <change>"菜谱详情"可以查看每种菜谱具体制作步骤，以及相关评论，同时可以上传报告</change>
+    </release>
+</changelog>

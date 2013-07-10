@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/fragment_recipe_comment_reply"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/comment_reply_layout"
+        android:gravity="center_vertical" />
+
+    <com.xlm.meishichina.widget.pulltorefresh.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fragment_recipe_comment_reply_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fragment_recipe_comment_reply"
+        android:layout_alignParentTop="true"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@drawable/list_divider_holo_light"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="rotate"
+        ptr:ptrMode="pullFromStart" />
+
+</RelativeLayout>

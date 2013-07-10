@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xlm.meishichina.widget.pulltorefresh.PullToRefreshScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.xlm.meishichina"
+    android:id="@+id/fragment_recipe_detail_scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    app:ptrMode="disabled" >
+
+    <include
+        android:id="@+id/fragment_recipe_detail_include"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/fragment_recipe_detail_item" />
+
+</com.xlm.meishichina.widget.pulltorefresh.PullToRefreshScrollView>

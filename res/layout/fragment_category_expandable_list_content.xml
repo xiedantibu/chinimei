@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_category_expandable_search_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10.0dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginLeft="5.0dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <Button
+            android:id="@+id/fragment_category_expandable_search_submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="?menusearch" />
+
+        <EditText
+            android:id="@+id/fragment_category_expandable_search_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:layout_toLeftOf="@id/fragment_category_expandable_search_submit_button"
+            android:background="@drawable/base_search_edittext_selector"
+            android:hint="@string/fragment_collect_search_tips"
+            android:imeOptions="actionSearch"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true"
+            android:textColor="#ff2f2f2f"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/fragment_category_expandable_tag_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/fragment_category_expandable_search_edit"
+            android:layout_alignLeft="@id/fragment_category_expandable_search_edit"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/biz_news_column_subscribe_search_icon"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/fragment_category_expandable_clear_search_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/fragment_category_expandable_search_edit"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:src="@drawable/biz_setting_guide_close"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/fragment_category_expandable_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:drawSelectorOnTop="false"
+        android:fadeScrollbars="true"
+        android:fastScrollAlwaysVisible="true"
+        android:fastScrollEnabled="true" />
+
+</LinearLayout>

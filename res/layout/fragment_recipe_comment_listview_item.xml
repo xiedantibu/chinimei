@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp" >
+
+    <ImageView
+        android:id="@+id/comment_listview_item_avater"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="8.0dip"
+        android:background="@color/background_light"
+        android:padding="2.0dip" />
+
+    <TextView
+        android:id="@+id/comment_listview_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/comment_listview_item_avater"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/comment_listview_item_avater"
+        android:gravity="left|center"
+        android:textAppearance="@style/comment_date_style" />
+
+    <TextView
+        android:id="@+id/comment_listview_item_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/comment_listview_item_avater"
+        android:layout_alignTop="@id/comment_listview_item_avater"
+        android:layout_toLeftOf="@id/comment_listview_item_date"
+        android:layout_toRightOf="@id/comment_listview_item_avater"
+        android:gravity="left|center"
+        android:singleLine="true"
+        android:textAppearance="@style/comment_username_style" />
+
+    <TextView
+        android:id="@+id/comment_listview_item_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment_listview_item_avater"
+        android:layout_marginTop="9.0dip"
+        android:textAppearance="@style/comment_content_style" />
+
+</RelativeLayout>

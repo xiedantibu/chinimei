@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xlm.meishichina.widget.pulltorefresh.PullToRefreshGridView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recipe_collects_gridview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:horizontalSpacing="10.0dip"
+    android:numColumns="@integer/yaoyiyao_history_gridview_numColumns"
+    android:padding="5.0dip"
+    android:scrollbars="none"
+    android:verticalSpacing="10.0dip"
+    ptr:ptrMode="both" />

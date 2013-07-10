@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="text_normal_orange">#ffff6600</color>
+    <color name="text_color_gray_black">#ff555555</color>
+    <color name="text_color_gray">#ff999999</color>
+    <color name="text_normal_orange">#ffff6600</color>
+    <color name="text_normal_orange">#ffff6600</color>
+    <color name="detail_caipin_background_color">#fff0f0f0</color>
+    <color name="comment_reply">#ff545454</color>
+    <color name="base_main_bg_color">#fff0f0f0</color>
+    <color name="comment_username">#ff5191d2</color>
+    <color name="comment_content">#ff2f2f2f</color>
+    <color name="listview_item_background_pressed">#fff5f5f5</color>
+
+    <drawable name="actionbar_bg">#aa000000</drawable>
+
+</resources>
